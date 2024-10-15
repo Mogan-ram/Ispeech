@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA=Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ispeech</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h2 class="logo">Ispeech</h2>
+        <nav class="navigation">
+            
+             <a href="#">Home<span></span></a> 
+             <a href="convert">Gesture Translation<span></span></a> 
+             <a href="tutorial">Tutorial<span></span></a> 
+             <a href="aboutus">About Us<span></span></a> 
+            <a href="feedback">Feeback<span></span></a>
+            
+        </nav> 
+    </header>
+    
+    <section class="parallax">
+        <h2 id="text"> ISL sign language to speech conversion </h2>
+        
+        <!-- <button class="button-30" id="button-30"> Translate</button> -->
+    </section>
+    
+    <section class="sec">
+        <h2>Project Goal</h2>
+        <p>
+            This project aims to develop a robust system that translates Indian Sign Language (ISL) gestures into spoken words using advanced machine learning techniques. The primary objective is to bridge the communication gap between the hearing-impaired community and the general population by converting sign language gestures into audible speech.The system leverages a combination of computer vision and machine learning methods to accurately recognize and classify ISL gestures.
+        </p> 
+        <br>
+        <p> 
+               A large dataset of ISL gestures, consisting of images and videos, is used to train a deep learning model, such as a Convolutional Neural Network (CNN) for image recognition, or a Long Short-Term Memory (LSTM) network for sequence prediction. The model is trained to identify specific hand shapes, movements, and orientations associated with ISL.Once the gestures are recognized, they are mapped to corresponding text and subsequently converted into speech using a Text-to-Speech (TTS) engine.
+        </p>
+        <br>
+        <p>
+         The system's performance is evaluated based on its accuracy, speed, and ability to generalize to new, unseen gestures.The proposed solution is expected to significantly enhance the accessibility of communication for individuals with hearing and speech impairments, enabling them to interact more effectively in society. The project also contributes to the growing field of gesture recognition and human-computer interaction, with potential applications in various domains, including education, healthcare, and customer service.
+        </p>
+        <br>
+        <button class="button-30" id="button-30"> Text-Speech</button>
+        <br>
+        
+         <!-- Modal for selecting language and inputting text -->
+         <div id="ttsModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Select Language and Enter Text</h2>
+
+                <label for="language">Choose Language:</label>
+                <select id="language">
+                    <option value="en">English</option>
+                    <option value="hi">Hindi</option>
+                    <option value="ta">Tamil</option>
+                    <option value="bn">Bengali</option>
+                    <!-- Add the rest of the languages from your list -->
+                </select>
+
+                <br><br>
+
+                <label for="textInput">Enter Text:</label>
+                <textarea id="textInput" rows="4" cols="50"></textarea>
+
+                <br><br>
+
+                <button id="speakBtn">Speak</button>
+            </div>
+        </div>
+        <br>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
