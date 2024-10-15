@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA=Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ispeech</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
     <header>
@@ -41,7 +41,7 @@
          The system's performance is evaluated based on its accuracy, speed, and ability to generalize to new, unseen gestures.The proposed solution is expected to significantly enhance the accessibility of communication for individuals with hearing and speech impairments, enabling them to interact more effectively in society. The project also contributes to the growing field of gesture recognition and human-computer interaction, with potential applications in various domains, including education, healthcare, and customer service.
         </p>
         <br>
-        <button class="button-30" id="button-30"> Text-Speech</button>
+        <button  id="button-30"> Text-Speech</button>
         <br>
         
          <!-- Modal for selecting language and inputting text -->
@@ -71,6 +71,6 @@
         </div>
         <br>
     </section>
-    <script src="script.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>
